@@ -1,16 +1,17 @@
 
 import './App.css';
-import Header from './Components/header';
+
+import Footer from './Components/Footer/footer';
+
 
 function App() {
-<>
+  return (
+   <>
+   <Footer/>
 
+   
+   </>
+  );
 
-<Header/>
-
-
-</>
-
-}
 
 export default App;
