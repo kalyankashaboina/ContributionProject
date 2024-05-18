@@ -1,12 +1,13 @@
 
 import './App.css';
-import Footer from './Footer/footer';
+import Footer from './Components/Footer/footer';
+
 
 function App() {
   return (
    <>
-   
-  <Footer/>
+   <Footer/>
+
    
    </>
   );
