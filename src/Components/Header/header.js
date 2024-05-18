@@ -1,11 +1,43 @@
 import React from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faHeart, faUser , faSearch} from '@fortawesome/free-solid-svg-icons'; 
+import { faHeart as faHeartRegular, faUser as faUserRegular } from '@fortawesome/free-regular-svg-icons';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
+import "./header.css"
 
 function Header(){
     return(<>
     
-    <h1>  This is Header </h1>
-    <p>we need a collbrative projrct</p>
+    <nav>
+<div className='UpperNav'>
+<div><img src="http" alt="image" /></div>
+<FontAwesomeIcon icon={faBars} className="menu-icon" />
+<h1>LOGO</h1>
+
+<div className="RightSide">
+<FontAwesomeIcon icon={faSearch} className="search-icon" />
+<FontAwesomeIcon icon={faHeartRegular} className="icon" />
+                    <FontAwesomeIcon icon={faShoppingCart} className="icon" />
+                    <FontAwesomeIcon icon={faUserRegular} className="icon" />
+                    {/* <h3>eng</h3> */}
+                    <select className="languageSel">
+                        <option>ENG</option>
+                    </select>
+                </div>
+</div>
+
+{/* <div className='LowerNav'>
+
+</div> */}
+<ul>
+    <li><a>Home</a></li>
+    <li><a>Skills</a></li>
+    <li><a>Stories</a></li>
+    <li><a>About</a></li>
+    <li><a>contact us</a></li>
+</ul>
+</nav>
     </>)
 }
 
