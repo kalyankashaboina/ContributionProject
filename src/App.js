@@ -1,5 +1,6 @@
 
 import './App.css';
+
 import Footer from './Components/Footer/footer';
 
 
@@ -11,6 +12,6 @@ function App() {
    
    </>
   );
-}
+
 
 export default App;
