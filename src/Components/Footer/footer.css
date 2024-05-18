@@ -1,0 +1,37 @@
+.footer{
+width: 1440px;
+height: 750px;
+top: 3632px;
+gap: 0px;
+opacity: 0px;
+background: #000000;
+border: 1px solid red;
+
+}
+
+.con1{
+width: 1440px;
+height: 289px;
+top: 15px;
+gap: 0px;
+opacity: 0px;
+color: #F1F1F1;
+
+
+}
+.con1>h5{
+width: 201px;
+height: 24px;
+top: 79px;
+left: 128px;
+gap: 0px;
+opacity: 0px;
+
+font-family: Simplon Norm;
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+text-align: left;
+
+
+}
