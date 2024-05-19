@@ -1,37 +1,432 @@
-.footer{
-width: 1440px;
-height: 750px;
-top: 3632px;
-gap: 0px;
-opacity: 0px;
-background: #000000;
-border: 1px solid red;
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575px) {
+
+    /* styles here */
+    .footer {
+        visibility: hidden
+    }
+
+    .footer1 {
+
+        /* width: 375px; */
+        height: 699px;
+        gap: 0px;
+        opacity: 0px;
+        padding-top: 34px;
+        padding-left: 26px;
+        background-color: #000000;
+        color: #FFFFFF;
+
+
+    }
+
+    .footer1con1 {
+
+        width: 343px;
+        height: 334px;
+        top: 24px;
+        left: 16px;
+        gap: 0px;
+        opacity: 0px;
+        border: 1px solid red;
+        
+
+
+
+    }
+    .footer1con1>h4,p{
+        margin-top: 10px;
+    }
+  .input1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+
+    .line1 {
+
+        width: 343px;
+        height: 0px;
+        /* top: 179px; */
+        /* left: 16px; */
+        gap: 0px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        border: 1px solid #E5E5E5;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    .callus{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .currency1{
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 
 }
 
-.con1{
-width: 1440px;
-height: 289px;
-top: 15px;
-gap: 0px;
-opacity: 0px;
-color: #F1F1F1;
-
-
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+    /* styles here */
 }
-.con1>h5{
-width: 201px;
-height: 24px;
-top: 79px;
-left: 128px;
-gap: 0px;
-opacity: 0px;
 
-font-family: Simplon Norm;
-font-size: 20px;
-font-weight: 700;
-line-height: 24px;
-text-align: left;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* styles here */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* styles here */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* styles here */
+
+    .footer {
+        /* width: 1440px; */
+        /* height: 750px; */
+        top: 3632px;
+        gap: 0px;
+        opacity: 0px;
+        background: #000000;
+        /* border: 1px solid red; */
+    }
+
+    .con1 {
+        /* width: 1440px; */
+        height: 289px;
+        top: 15px;
+        gap: 0px;
+        opacity: 0px;
+        color: #f1f1f1;
+        display: flex;
+        padding: 128px 78px;
+        margin: auto;
+        justify-content: center;
+        gap: 170px;
+    }
+
+    .con1>div {
+        width: 50%;
+        height: 317px;
+    }
+
+    .con1left {
+        /* width: 624px; */
+
+        /* top: 127px; */
+        /* left: 128px; */
+        gap: 0px;
+        opacity: 0px;
+        /* border: 1px solid teal; */
+        padding: 30px;
+    }
+
+    .con1left>h4 {
+        width: 201px;
+        height: 24px;
+        margin-top: 39px;
+        left: 128px;
+        gap: 0px;
+        opacity: 0px;
+        /* padding: 20px; */
+        /* padding-left: 20px; */
+
+    }
+
+    .con1left>p {
+        width: 584px;
+        height: 19px;
+        margin-top: 27px;
+        left: 128px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Simplon Norm;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
+
+    }
+
+    .input {
+
+        width: 584px;
+        height: 48px;
+        margin-top: 37px;
+        left: 128px;
+        gap: 0px;
+        opacity: 0px;
 
 
+
+    }
+
+    .input>input {
+        width: Fixed (484px)px;
+        height: Fixed (47px)px;
+        padding: 14px 24px 14px 24px;
+        gap: 8px;
+        opacity: 0px;
+
+    }
+
+    .input>button {
+        /* width: Fixed (384px)px; */
+        width: 184px;
+        height: 48px;
+        left: 400px;
+        gap: 0px;
+        border-radius: 5px 0px 0px 0px;
+        border: 1.14px 0px 0px 0px;
+        opacity: 0.3px;
+
+
+
+    }
+
+    .con1rigth {
+        padding: 30px;
+    }
+
+    .contact {
+        /* width: 223px; */
+        height: 54px;
+        /* border: 1px solid red; */
+        top: 119px;
+        left: 888px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Simplon Norm;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
+        margin-top: 10px;
+
+    }
+
+    .contact>p {
+        /* width: 114px; */
+        /* height: 19px; */
+        /* top: 119px; */
+        /* left: 888px; */
+        margin-bottom: 40px;
+        gap: 10px;
+        opacity: 0px;
+        margin-top: 20px;
+        text-wrap: nowrap;
+
+    }
+
+    .currency {
+        width: 72px;
+        height: 24px;
+        /* top: 237px; */
+        /* left: 888px; */
+        display: flex;
+        /* border: 1px solid red; */
+        gap: 5px;
+        opacity: 0px;
+        margin-top: 10px;
+        margin-top: 20px;
+
+    }
+
+    .currency>p {
+        /* margin-top: 20px; */
+        width: 32px;
+        height: 19px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Simplon Norm;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.2px;
+        letter-spacing: 1px;
+        text-align: left;
+
+    }
+
+
+
+
+    .line {
+
+        width: 1248px;
+        height: 0px;
+        /* top: 317px; */
+        /* left: 128px; */
+        gap: 0px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        angle: -0 deg;
+        border: 1px solid #FFFFFF;
+        /* padding: 128px; */
+        margin-left: 128px;
+        margin-top: 200px;
+    }
+
+
+
+    .footerlast {
+        color: #FFFFFF;
+        display: flex;
+        padding-left: 128px;
+    }
+
+    .footerlast1 {
+        width: 166px;
+        height: 260px;
+        margin-right: 55px;
+        left: 128px;
+        gap: 0px;
+        opacity: 0px;
+        margin-top: 73px;
+
+    }
+
+    .footerlast1>h3 {
+        width: 134px;
+        height: 30px;
+        top: 373px;
+        left: 128px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Simplon Norm;
+        font-size: 24.71px;
+        font-weight: 700;
+        line-height: 29.66px;
+        text-align: left;
+
+
+    }
+
+    .footerlast1>p {
+        width: 69px;
+        height: 22px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Simplon Norm;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+        text-align: left;
+        margin: 10px;
+        text-wrap: nowrap;
+    }
+
+    .footerlast2>h3 {
+        width: 134px;
+        height: 30px;
+        top: 373px;
+        left: 128px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Simplon Norm;
+        font-size: 24.71px;
+        font-weight: 700;
+        line-height: 29.66px;
+        text-align: left;
+
+
+    }
+
+    .footerlast2>p {
+        width: 69px;
+        height: 22px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Simplon Norm;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+        text-align: left;
+        text-wrap: nowrap;
+        margin: 10px;
+
+    }
+
+    .footerlast2 {
+        width: 166px;
+        height: 260px;
+        margin-top: 73px;
+        left: 128px;
+        gap: 0px;
+        margin-left: 100px;
+        opacity: 0px;
+
+    }
+
+
+    .footerlast3 {
+        margin-top: 73px;
+        margin-left: 150px;
+        text-wrap: nowrap;
+
+
+    }
+
+    .footerlast3>h3 {
+
+        width: 134px;
+        height: 30px;
+        top: 373px;
+        left: 128px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Simplon Norm;
+        font-size: 24.71px;
+        font-weight: 700;
+        line-height: 29.66px;
+        text-align: left;
+        margin-bottom: 10px;
+
+    }
+
+    .footerlast3img {
+        margin: 20px;
+    }
+
+    .footerlast3img>img {
+        margin: 20px;
+    }
+
+
+    .footerlastimg {
+
+        width: 376px;
+        height: 55px;
+        top: 549px;
+        left: 888px;
+        gap: 8px;
+        opacity: 0px;
+        /* border: 1px solid red; */
+
+    }
+
+    .footerlastimg>img {
+
+        /* width: 1440px; */
+        /* height: 750px; */
+        /* top: 3632px; */
+        margin: 10px;
+        gap: 0px;
+        opacity: 0px;
+
+    }
+
+
+    .footer1{
+        visibility: hidden;
+    }
 }
