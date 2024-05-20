@@ -144,11 +144,12 @@ text-align: left;
 
 
 .cards{
-    width:1146px ;
+    width:85% ;
 
 /* height: 2932px; */
 /* top: 652px; */
 margin-left:122px;
+/* overflow: hidden; */
 
 display: grid;
 grid-template-columns: repeat(3,0.9fr);
@@ -201,7 +202,7 @@ text-align: left;
 }
 
 .card>img{
-    width: 300px;
+    width:200px;
 height: 399px;
 gap: 0px;
 opacity: 0px;

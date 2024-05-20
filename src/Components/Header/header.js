@@ -5,7 +5,7 @@ import { faHeart as faHeartRegular, faUser as faUserRegular } from '@fortawesome
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 import vector from "../../images/Vector.png"
-import "./header.css"
+import "./herder1.css"
 
 function Header(){
     return(<>

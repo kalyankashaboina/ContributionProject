@@ -1,0 +1,227 @@
+/* Base styles */
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    width: 90%;
+    height: 88px;
+    margin-top: 72px;
+    margin: auto;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 1px 0;
+    border-color: #E5E5E5;
+}
+
+.navitem {}
+
+.navhide {
+    margin-left: 60px;
+    font-family: Adobe Caslon Pro;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    text-align: right;
+}
+
+.navhide > h2 {
+    text-decoration: underline;
+    color: #888792;
+}
+
+.navREc {
+    font-family: Simplon Norm;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+}
+
+.content {
+    width: 100%;
+    max-width: 1248px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.fil {
+    width: 100%;
+    max-width: 300px;
+    height: 846px;
+    gap: 24px;
+    opacity: 0px;
+}
+
+.filInput {
+    width: 42px;
+    height: 42px;
+    gap: 0px;
+    opacity: 0px;
+    border: 0.92px solid #4D4D4D;
+    margin-top: 20px;
+}
+
+.filInput > h2 {
+    margin-left: 80px;
+}
+
+.separtor {
+    height: 0px;
+    gap: 0px;
+    margin-top: 10px;
+    border: 1px solid #E5E5E5;
+    opacity: 0px;
+}
+
+.filsort {
+    width: 100%;
+    max-width: 250px;
+    gap: 24px;
+    opacity: 0px;
+    margin-top: 10px;
+}
+
+.filsort > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filsort > h4 {
+    font-family: Simplon Norm;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+}
+
+.cards {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    opacity: 0px;
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+    width: 100%;
+    max-width: 350px;
+    height: 462px;
+    gap: 10px;
+    opacity: 0px;
+}
+
+.card > h3 {
+    font-family: Simplon Norm;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.card > p {
+    font-family: Simplon Norm;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+}
+
+.card > img {
+    width: 200px;
+    height: 399px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.icon {
+    width: 30px;
+    height: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    .navitem, .navhide, .navREc {
+        margin-left: 0;
+        text-align: center;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    .fil {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+    }
+    .cards {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        width: 100%;
+        padding: 5px 10px;
+    }
+    .fil {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+    }
+    .cards {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .card > img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navhide {
+        margin-left: 0;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .fil {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        text-align: center;
+    }
+    .cards {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .card {
+        width: 100%;
+        max-width: none;
+    }
+}
