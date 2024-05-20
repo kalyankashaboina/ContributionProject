@@ -9,5 +9,12 @@
 }
 
 body{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    font-family: Simplon Norm;
+/* font-size: 60px; */
+/* font-weight: 400; */
+/* line-height: 72px; */
+/* letter-spacing: 1px; */
+text-align: center;
+
 }
