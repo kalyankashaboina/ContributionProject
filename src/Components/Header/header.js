@@ -4,6 +4,7 @@ import { faBars, faHeart, faUser , faSearch} from '@fortawesome/free-solid-svg-i
 import { faHeart as faHeartRegular, faUser as faUserRegular } from '@fortawesome/free-regular-svg-icons';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
+import vector from "../../images/Vector.png"
 import "./header.css"
 
 function Header(){
@@ -11,7 +12,7 @@ function Header(){
     
     <nav>
 <div className='UpperNav'>
-<div><img src="http" alt="image" /></div>
+<div><img src={vector} alt="image" /></div>
 <FontAwesomeIcon icon={faBars} className="menu-icon" />
 <h1>LOGO</h1>
 
@@ -38,6 +39,13 @@ function Header(){
     <li><a>contact us</a></li>
 </ul>
 </nav>
+
+
+   <div className="discovery">
+
+    <h3>DISCOVER OUR PRODUCTS</h3>
+    <p>Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus scelerisque. Dolor integer scelerisque nibh amet mi ut elementum dolor.</p>
+   </div>
     </>)
 }
 
