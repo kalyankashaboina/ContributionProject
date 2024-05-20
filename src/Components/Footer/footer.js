@@ -127,14 +127,14 @@ function Footer() {
         </div>
 
         <label for="mettā"> mettā muse</label>
-        <select id="metta">
+        {/* <select id="metta">
   <option value="about-us">About Us</option>
   <option value="stories">Stories</option>
   <option value="artisans">Artisans</option>
   <option value="boutiques">Boutiques</option>
   <option value="contact-us">Contact Us</option>
   <option value="eu-compliances-docs">EU Compliances Docs</option>
-</select>
+</select> */}
 
 
 
