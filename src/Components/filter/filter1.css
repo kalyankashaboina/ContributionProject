@@ -21,7 +21,7 @@
     border-color: #E5E5E5;
 }
 
-.navitem {}
+/* .navitem {} */
 
 .navhide {
     margin-left: 60px;
@@ -153,6 +153,21 @@
     height: 20px;
 }
 
+.selectDiv select{
+    border: none;
+    outline: none;
+    font-family: Simplon Norm;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+
+    display: none;
+
+}
+
+
+
+
 /* Responsive styles */
 @media (max-width: 1200px) {
     .nav {
@@ -216,6 +231,25 @@
         margin-left: 0;
         text-align: center;
     }
+
+    .selectDiv select{
+        display: block;
+    }
+    .navhide{
+        display: none;
+    }
+    .dflex{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .navitem{
+    display: none;
+}
+.fil{
+    display: none;
+}
+
     .cards {
         width: 100%;
         grid-template-columns: 1fr;

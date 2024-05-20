@@ -63,8 +63,12 @@ const Filter = () => {
         </div>
 
 
-        <div>
+        <div className="dflex">
+<div className="selectDiv">     <select>
+            <option><h2>FILTER</h2></option>
+          </select></div>
         <div style={{ display: "flex",justifyContent:"center" ,alignItems:"center"}} className="navREc">
+     
           <h2>RECOMMENDED</h2>
           <svg
             xmlns="http://www.w3.org/2000/svg"
