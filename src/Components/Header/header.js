@@ -12,8 +12,8 @@ function Header(){
     
     <nav>
 <div className='UpperNav'>
-<div><img src={vector} alt="image" /></div>
 <FontAwesomeIcon icon={faBars} className="menu-icon" />
+<div ><img src={vector} alt="image" /></div>
 <h1>LOGO</h1>
 
 <div className="RightSide">
@@ -31,7 +31,7 @@ function Header(){
 {/* <div className='LowerNav'>
 
 </div> */}
-<ul>
+<ul className="hello">
     <li><a>Home</a></li>
     <li><a>Skills</a></li>
     <li><a>Stories</a></li>
@@ -43,7 +43,7 @@ function Header(){
 
    <div className="discovery">
 
-    <h3>DISCOVER OUR PRODUCTS</h3>
+   <div> <h3>DISCOVER</h3> <h3>OUR PRODUCTS</h3></div>
     <p>Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus scelerisque. Dolor integer scelerisque nibh amet mi ut elementum dolor.</p>
    </div>
     </>)

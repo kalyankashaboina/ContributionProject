@@ -53,21 +53,12 @@ nav ul li a {
 }
 
 .discovery {
-    width: 721px;
-    height: 168px;
+    width: 100%;
+    max-width: 721px;
+    height: auto;
     margin: 92px auto 50px;
-    gap: 0px;
-    opacity: 0px;
-}
-
-.discovery > h3 {
-    font-family: Simplon Norm;
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 72px;
-    letter-spacing: 1px;
     text-align: center;
-    white-space: nowrap;
+    padding: 0 1rem; /* Added padding for better responsiveness */
 }
 
 .discovery > p {
@@ -75,15 +66,40 @@ nav ul li a {
     font-size: 22px;
     font-weight: 400;
     line-height: 40px;
-    text-align: center;
 }
+
+.discovery>div {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+    left: 6%;
+  
+}
+
+.discovery div h3 {
+    font-family: Simplon Norm;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+
 
 /* Responsive styles */
 @media (max-width: 1200px) {
     .UpperNav {
-        flex-direction: column;
+        /* flex-direction: column; */
+    
         align-items: flex-start;
         padding: 1rem;
+    }
+
+    .UpperNav >img{
+        width: 100px;
+        height: 100px;
     }
 
     nav ul {
@@ -100,21 +116,20 @@ nav ul li a {
         gap: 10%;
     }
 
-    .discovery {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+    .discovery div {
+        flex-direction: column; /* Stack h3 tags vertically on smaller screens */
+        align-items: flex-start; /* Align h3 tags to the left */
     }
 }
 
 @media (max-width: 768px) {
     .UpperNav {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
     }
 
     nav ul {
-        flex-direction: column;
+        /* flex-direction: column; */
         padding: 1rem;
         align-items: center;
     }
@@ -124,24 +139,18 @@ nav ul li a {
     }
 
     .RightSide {
-        flex-direction: column;
+        /* flex-direction: column; */
         padding: 0;
         gap: 10px;
     }
 
     .discovery {
-        width: 100%;
-        margin: 50px auto;
+        margin: 50px auto; /* Adjust margin for smaller screens */
     }
-
-    .discovery > h3 {
-        font-size: 40px;
-        line-height: 50px;
-    }
-
-    .discovery > p {
-        font-size: 18px;
-        line-height: 30px;
+    .discovery div{
+        align-items: center;
+        position: relative;
+    left: 10%;
     }
 
     .menu-icon {
@@ -156,11 +165,20 @@ nav ul li a {
     nav ul.active {
         display: flex;
     }
+
+    /* Hide nav items */
+    .hello {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
     .UpperNav {
         padding: 0.5rem;
+    }
+    .UpperNav >div >img{
+        width: 30px;
+        height: 30px;
     }
 
     nav ul {
@@ -177,17 +195,26 @@ nav ul li a {
     }
 
     .discovery {
-        width: 100%;
-        margin: 20px auto;
+        margin: 20px auto; /* Further adjust margin for smallest screens */
     }
 
-    .discovery > h3 {
-        font-size: 30px;
-        line-height: 40px;
+    .discovery div{
+        align-items: center;
+        position: relative;
+    left: 4%;
+    }
+
+    .discovery div h3 {
+        font-size: 30px; /* Decrease heading font size */
+        line-height: 40px; /* Adjust line height */
     }
 
     .discovery > p {
-        font-size: 16px;
-        line-height: 25px;
+        font-size: 16px; /* Decrease paragraph font size */
+        line-height: 25px; /* Adjust line height */
+    }
+    .UpperNav img {
+        display: block;
+        width: 100px; 
     }
 }
