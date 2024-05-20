@@ -1,0 +1,193 @@
+/* Base styles */
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid gray;
+}
+
+.UpperNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+nav ul {
+    display: flex;
+    padding: 2% 20%;
+}
+
+nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 10%;
+}
+
+nav ul li a {
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.RightSide {
+    padding: 0 6% 0 0;
+    display: flex;
+    align-items: center;
+    gap: 15%;
+}
+
+.languageSel {
+    border: none;
+    outline: none;
+}
+
+.discovery {
+    width: 721px;
+    height: 168px;
+    margin: 92px auto 50px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.discovery > h3 {
+    font-family: Simplon Norm;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: 1px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.discovery > p {
+    font-family: Simplon Norm;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .UpperNav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    nav ul {
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin-left: 5%;
+    }
+
+    .RightSide {
+        padding: 0;
+        gap: 10%;
+    }
+
+    .discovery {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .UpperNav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .RightSide {
+        flex-direction: column;
+        padding: 0;
+        gap: 10px;
+    }
+
+    .discovery {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    .discovery > h3 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .discovery > p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .UpperNav {
+        padding: 0.5rem;
+    }
+
+    nav ul {
+        padding: 0.5rem;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .RightSide {
+        padding: 0;
+        gap: 5%;
+    }
+
+    .discovery {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .discovery > h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .discovery > p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
